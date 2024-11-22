@@ -20,21 +20,21 @@ Using bulleted lists, describe the accuracy scores and the precision and recall 
 ## Summary
 Summarize the results of the machine learning models, and include a recommendation on the model to use, if any.
 
-# Which Model Performs Best?
-The Logistic Regression model performs well overall and is particularly effective at identifying the majority class (0).
-It demonstrates strong performance for the minority class (1), especially with high recall (94%), which is critical in certain contexts.
+## Which Model Performs Best?
+* The Logistic Regression model performs well overall and is particularly effective at identifying the majority class (0).
+* It demonstrates strong performance for the minority class (1), especially with high recall (94%), which is critical in certain contexts.
 
-# Does Performance Depend on the Problem?
-If predicting high-risk loans (1) is more critical:
+## Does Performance Depend on the Problem?
+* If predicting high-risk loans (1) is more critical:
 The recall for 1 is 94%, meaning the model correctly identifies most high-risk loans. This is ideal if the goal is to minimize the risk of missing true high-risk loans, even if it means a few healthy loans are flagged incorrectly.
-If predicting healthy loans (0) is more critical:
+* If predicting healthy loans (0) is more critical:
 The model’s perfect precision (1.00) and high recall (0.99) for 0 ensure minimal misclassification of healthy loans.
+
 The performance depends on the cost or risk associated with misclassifying either category:
+* Missing a high-risk loan (1) could lead to financial loss or risk exposure.
+* Misclassifying a healthy loan (0) as high-risk may result in unnecessary investigation or customer dissatisfaction.
 
-Missing a high-risk loan (1) could lead to financial loss or risk exposure.
-Misclassifying a healthy loan (0) as high-risk may result in unnecessary investigation or customer dissatisfaction.
-
-# Recommendation:
+## Recommendation:
 Use the Logistic Regression model.
-It demonstrates strong overall performance and balances the trade-off between precision and recall for both labels.
-The high recall for high-risk loans (1) ensures critical cases are identified, while the near-perfect performance for healthy loans (0) minimizes false positives.
+* It demonstrates strong overall performance and balances the trade-off between precision and recall for both labels.
+* The high recall for high-risk loans (1) ensures critical cases are identified, while the near-perfect performance for healthy loans (0) minimizes false positives.
